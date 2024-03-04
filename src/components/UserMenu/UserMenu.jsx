@@ -4,8 +4,10 @@ import { logOut } from '../../redux/auth/operations';
 import { selectUser } from '../../redux/auth/slectors';
 import { Avatar, Badge, Button, Typography } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
-import Contacts from '@mui/icons-material/Contacts';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+
+import { FaShieldHeart } from "react-icons/fa6";
+import { CgNotes } from "react-icons/cg";
+
 import {
   selectContacts,
   selectFvoriteContacts,
@@ -20,8 +22,12 @@ export default function UserMenu({ mediaQuery }) {
   return (
     <div className={css.wrapper}>
       <>
-        <Badge badgeContent={favoriteContacts.length} color="primary" showZero>
-          <FavoriteIcon sx={{ color: '#fff' }} />
+        <Badge 
+          badgeContent={favoriteContacts.length} 
+          color="primary" 
+          showZero
+        >
+          <FaShieldHeart  size={24}/>
         </Badge>
         <Badge
           badgeContent={contacts.length}
@@ -29,7 +35,7 @@ export default function UserMenu({ mediaQuery }) {
           max={999}
           showZero
         >
-          <Contacts sx={{ color: '#fff' }} />
+          <CgNotes  size={24}/>
         </Badge>
       </>
 
@@ -42,7 +48,7 @@ export default function UserMenu({ mediaQuery }) {
         {user.name[0]}
       </Avatar>
 
-      <Button type="button" style={{ backgroundColor: '#0818A8', color: 'white' }} onClick={() => dispatch(logOut())}>
+      <Button type="button" style={{ backgroundColor: '#4682B4', color: 'white' }} onClick={() => dispatch(logOut())}>
         Logout
       </Button>
     </div>
