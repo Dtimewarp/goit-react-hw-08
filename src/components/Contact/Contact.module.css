@@ -1,0 +1,62 @@
+.contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #1f262e;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #101418;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px;
+
+  transition: transform 350ms ease-out;
+}
+/* 
+.contact:hover,
+.contact:focus {
+  transform: scale(1.05);
+} */
+
+@media screen and (mix-width: 768px) {
+  .contact {
+    min-width: 350px;
+  }
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.name {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: #fff;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
