@@ -5,12 +5,3 @@
   color: #fff;
 }
 
-.icon {
-  color: #3399ff;
-  transition: transform 350ms ease-out;
-}
-
-.icon:focus,
-.icon:hover {
-  transform: scale(-1, 1);
-}

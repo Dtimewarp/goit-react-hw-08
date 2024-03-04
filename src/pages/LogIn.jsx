@@ -10,11 +10,11 @@ export default function LogIn() {
         <title>Login</title>
       </Helmet>
       <Box
-        width={'80%'}
+        width={'90%'}
         my={4}
         mr={'auto'}
         ml={'auto'}
-        bgcolor={'#0f1c2b'}
+        bgcolor={'#353935'}
         border={'1px solid #1f262e'}
         boxShadow={'rgba(0, 0, 0, 0.4) 0px 4px 8px'}
         borderRadius={'8px'}

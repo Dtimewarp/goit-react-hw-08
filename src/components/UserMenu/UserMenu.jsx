@@ -25,7 +25,7 @@ export default function UserMenu({ mediaQuery }) {
         </Badge>
         <Badge
           badgeContent={contacts.length}
-          color="primary"
+          color="secondary"
           max={999}
           showZero
         >
@@ -36,13 +36,13 @@ export default function UserMenu({ mediaQuery }) {
       {mediaQuery && <Typography>Welcome, {user.name} </Typography>}
 
       <Avatar
-        src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+        src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
         sx={{ bgcolor: deepPurple[500] }}
       >
         {user.name[0]}
       </Avatar>
 
-      <Button type="button" onClick={() => dispatch(logOut())}>
+      <Button type="button" style={{ backgroundColor: '#0818A8', color: 'white' }} onClick={() => dispatch(logOut())}>
         Logout
       </Button>
     </div>

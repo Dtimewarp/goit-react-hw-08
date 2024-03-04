@@ -19,11 +19,11 @@ export default function Navigation({ mediaQuery }) {
       {!mediaQuery && (
         <div className={css.navMenu}>
           <NavLink to="/" className={buildLinkClass}>
-            Home
+            Home page
           </NavLink>
           {isLoggedIn && (
             <NavLink to="/contacts" className={buildLinkClass}>
-              Contacts
+              Your contacts
             </NavLink>
           )}
         </div>

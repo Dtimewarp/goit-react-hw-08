@@ -106,7 +106,7 @@ export default function RegisterForm() {
           sx={{ marginBottom: '20px' }}
           autoComplete="current-password"
         />
-        <Button color="primary" variant="contained" fullWidth type="submit">
+        <Button color="secondary" variant="contained" fullWidth type="submit">
           Log In
         </Button>
       </form>

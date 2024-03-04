@@ -32,8 +32,9 @@ export default function Home() {
             Do not lose contact with those who are very important to you!
             </span>
             <br />
+            <br />
             <span>
-              Keep your contacts here:)
+              Keep your contacts here!
             </span>
           </Typography>
         </Box>
