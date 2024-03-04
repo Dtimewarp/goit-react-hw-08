@@ -1,4 +1,4 @@
-import { FaUserAlt } from 'react-icons/fa';
+import { FaUserEdit } from "react-icons/fa";
 import { FaPhoneAlt } from 'react-icons/fa';
 import css from './Contact.module.css';
 import DeleteButton from '../DeleteButton/DeleteButton';
@@ -23,7 +23,7 @@ export default function Contact({ id, name, number, randomColor }) {
             className={css.iconWrapper}
             style={{ backgroundColor: `${randomColor}` }}
           >
-            <FaUserAlt className={css.icon} />
+            <FaUserEdit className={css.icon} />
           </span>
           {name}
         </p>
