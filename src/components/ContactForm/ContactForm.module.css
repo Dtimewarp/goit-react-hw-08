@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 15px;
   padding: 15px;
-  border: 1px solid #1f262e;
+  border: 1px solid #353935;
   border-radius: 8px;
   margin-bottom: 20px;
   background-color: #101418;
@@ -15,7 +15,7 @@
   margin-top: 5px;
   width: 100%;
   padding: 10px;
-  border: 1px solid #1f262e;
+  border: 1px solid #353935;
   border-radius: 8px;
   outline: none;
   background-color: #1e262e;
@@ -26,7 +26,7 @@
   margin: 0 auto;
   padding: 8px 12px;
   border-radius: 8px;
-  border: 1px solid #1f262e;
+  border: 1px solid #353935;
   outline: none;
   background-color: var(--button);
 }
