@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Modal from '../Modal/Modal';
 import AddContact from '../AddContact/AddContact';
 import PersonSearchIcon from '@mui/icons-material/PersonSearch';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+
 import ContactsIcon from '@mui/icons-material/Contacts';
 
 export default function BasicSpeedDial({
@@ -27,12 +27,7 @@ export default function BasicSpeedDial({
       name: 'Search Contact',
       handler: toggleVisibility,
     },
-    {
-      icon: <FavoriteIcon />,
-      name: 'Favorite Contact',
-      handler: setIsFavoriteVisible.bind(null, true),
-    },
-    {
+      {
       icon: <ContactsIcon />,
       name: 'All Contact',
       handler: setIsFavoriteVisible.bind(null, false),
@@ -49,7 +44,7 @@ export default function BasicSpeedDial({
         ariaLabel="SpeedDial basic example"
         sx={{ position: 'absolute', top: 0, right: 0 }}
         icon={<SpeedDialIcon />}
-        direction={'left'}
+        direction={'down'}
       >
         {actions.map(action => (
           <SpeedDialAction
