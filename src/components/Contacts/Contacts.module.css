@@ -3,4 +3,5 @@
   padding-top: 40px;
   flex-grow: 1;
   background-color: #353935;
+  flex-wrap: wrap; 
 }

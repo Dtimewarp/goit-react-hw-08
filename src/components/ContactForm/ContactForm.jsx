@@ -47,7 +47,7 @@ export default function ContactForm({ initialValues, onSubmit, action }) {
           sx={{ marginBottom: '20px' }}
           autoComplete="off"
         />
-        <Button color="primary" variant="contained" fullWidth type="submit">
+        <Button color="secondary" variant="contained" fullWidth type="submit">
           {action}
         </Button>
       </form>
