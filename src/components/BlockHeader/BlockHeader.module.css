@@ -1,7 +1,8 @@
 .header {
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
   margin-bottom: 25px;
   color: #fff;
   width: 100%;
+  text-align: center;
 }
